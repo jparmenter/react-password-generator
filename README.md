@@ -1,7 +1,5 @@
 # React Password Generator
 
-## Features
+### `yarn build` fails to minify
 
-- Generatoe random password
-
-Inspired by [app ideas repo](https://github.com/jparmenter/app-ideas/blob/master/Projects/2-Intermediate/Password-Generator.md)
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

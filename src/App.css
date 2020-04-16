@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+
+.password-app {
+  background-color: #F3F4F7;
+  border: solid 3px #D22D27;
+  border-radius: 50px;
+  height: 50vh;
+}
