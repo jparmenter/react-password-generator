@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import { generate } from '../common/password';
-import { Box, Grid, Button, Typography } from '@material-ui/core';
+import { Box, Grid, Button, Typography, makeStyles } from '@material-ui/core';
 import FileCopy from '@material-ui/icons/FileCopy';
 import Refresh from '@material-ui/icons/Refresh';
 import PasswordOptions from './PasswordOptions';
-import './PasswordGenerator.css';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    margin: theme.spacing(3),
+    padding: theme.spacing(3),
+  },
+}));
 
 export default function PasswordGenerator() {
+  const classes = useStyles();
   const [options, setOptions] = useState({
     lowercase: true,
     numbers: true,
@@ -29,7 +36,7 @@ export default function PasswordGenerator() {
   }
 
   return (
-    <Grid container direction="column" className="generator">
+    <Grid container direction="column" className={classes.root}>
       <Grid container direction="row" justify="space-between">
         <Typography>{password}</Typography>
 
