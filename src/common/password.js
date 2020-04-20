@@ -7,9 +7,8 @@ const alphanumeric = 'abcdefghijklmnopqrstuvwxyz';
 const numbers = '1234567890';
 const symbols = `\`~!@#$%^&*()_-+={}[]\\|:;"'<>,.?/`;
 
-function generate(options) {
+function generate(options, size = 9) {
   const characterList = getCharacterList(options);
-  const size = 9;
   let result = '';
 
   if (!characterList.length) {
