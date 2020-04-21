@@ -40,9 +40,9 @@ export default function PasswordGenerator() {
     refreshPassword(_options);
   }
 
-  function sizeChanged(size) {
-    setSize(size);
-    refreshPassword(options, size);
+  function sizeChanged(_size) {
+    setSize(_size);
+    refreshPassword(options, _size);
   }
 
   return (

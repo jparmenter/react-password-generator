@@ -1,9 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import App from './App';
+import { shallow } from 'enzyme';
+import { Typography } from '@material-ui/core';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/password generator/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders app title', () => {
+  const wrapper = shallow(<App />);
+
+  expect(wrapper.find(Typography).text()).toEqual('Password Generator');
 });

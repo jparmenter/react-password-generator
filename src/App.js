@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
+import { Container, Grid, Typography } from '@material-ui/core';
 import PasswordGenerator from './password-generator/PasswordGenerator';
 
 function App() {

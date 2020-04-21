@@ -15,6 +15,7 @@ jobs:
     - name: Install and Buld
       run: |
         yarn
+        yarn test
         yarn build
 
     - name: Deploy 🚀

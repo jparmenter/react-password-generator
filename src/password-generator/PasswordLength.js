@@ -9,12 +9,7 @@ export default function PasswordLength(props) {
   return (
     <FormGroup>
       <Typography gutterBottom>Password Length</Typography>
-      <TextField
-        type="number"
-        defaultValue="0"
-        value={props.size}
-        onChange={handleChange}
-      />
+      <TextField type="number" value={props.size} onChange={handleChange} />
     </FormGroup>
   );
 }

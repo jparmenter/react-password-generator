@@ -1,7 +1,3 @@
-module.exports = {
-  generate,
-};
-
 const uppercaseAlphanumeric = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const alphanumeric = 'abcdefghijklmnopqrstuvwxyz';
 const numbers = '1234567890';
@@ -45,3 +41,11 @@ function getCharacterList(options) {
 
   return characterList;
 }
+
+module.exports = {
+  generate,
+  uppercaseAlphanumeric,
+  alphanumeric,
+  numbers,
+  symbols,
+};
